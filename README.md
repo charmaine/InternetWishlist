@@ -1,6 +1,6 @@
 A website made in hopes to recreate the no longer available Internet Wishlist. 
 
-IDEA:
+IDEA:<br>
 1. The project connects idea gurus and developers <br>
 2. Idea gurus (aka anyone) can submit their specific ideas through a typeform on the website.<br>
 3. Once the idea is approved, it will then be posted on to the website for any interested developers to work on.<br>
