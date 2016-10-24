@@ -45,7 +45,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    .heading-font;
+
     font-weight: 700;
 }
 
@@ -65,13 +65,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
     .button-variant(white; @theme-primary; @theme-primary);
-    .heading-font;
+
     font-weight: 700;
 }
 
 .btn-xl {
     .button-variant(white; @theme-primary; @theme-primary);
-    .heading-font;
+
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-toggle {
         background-color: @theme-primary;
         border-color: @theme-primary;
-        .heading-font;
+
         color: white;
         font-size: 12px;
         &:hover,
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-                .heading-font;
+
                 font-weight: 400;
                 letter-spacing: 1px;
                 color: white;
@@ -167,25 +167,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    .background-cover;
+    background: #3E3E3E;
+    background-image: radial-gradient(at 50% -16%, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.50) 190%);
+    background-blend-mode: normal,multiply;
     text-align: center;
     color: white;
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
         .intro-lead-in {
-            .serif-font;
             font-style: italic;
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
         }
         .intro-heading {
-            .heading-font;
+
             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
@@ -200,14 +197,14 @@ header {
             padding-top: 300px;
             padding-bottom: 200px;
             .intro-lead-in {
-                .serif-font;
+
                 font-style: italic;
                 font-size: 40px;
                 line-height: 40px;
                 margin-bottom: 25px;
             }
             .intro-heading {
-                .heading-font;
+
                 font-weight: 700;
                 font-size: 75px;
                 line-height: 75px;
@@ -228,7 +225,7 @@ section {
     }
     h3.section-subheading {
         font-size: 16px;
-        .serif-font;
+
         text-transform: none;
         font-style: italic;
         font-weight: 400;
@@ -288,8 +285,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -302,7 +299,7 @@ section {
                 margin: 0;
             }
             p {
-                .serif-font;
+
                 font-style: italic;
                 font-size: 16px;
                 margin: 0;
@@ -560,22 +557,22 @@ section#contact {
         box-shadow: none;
     }
     ::-webkit-input-placeholder {
-       .heading-font;
+
        font-weight: 700;
        color: @gray-lighter;
     }
     :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
+
        font-weight: 700;
        color: @gray-lighter;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
+
        font-weight: 700;
        color: @gray-lighter;
     }
-    :-ms-input-placeholder {  
-       .heading-font;
+    :-ms-input-placeholder {
+
        font-weight: 700;
        color: @gray-lighter;
     }
@@ -591,13 +588,13 @@ footer {
     text-align: center;
     span.copyright {
         line-height: 40px;
-        .heading-font;
+
         text-transform: none;
     }
     ul.quicklinks {
         margin-bottom: 0;
         line-height: 40px;
-        .heading-font;
+
         text-transform: none;
     }
 }
@@ -660,7 +657,7 @@ ul.social-buttons {
         }
         p.item-intro {
             margin: 20px 0 30px;
-            .serif-font;
+
             font-style: italic;
             font-size: 16px;
         }
@@ -704,8 +701,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
