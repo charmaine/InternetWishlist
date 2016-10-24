@@ -1,5 +1,5 @@
 A website made in hopes to recreate the no longer available Internet Wishlist. 
-Website temporarily available can be accessed through: https://charmainelee.github.io/InternetWishlist/
+Website can be temporarily be accessed through: https://charmainelee.github.io/InternetWishlist/
 
 IDEA:<br>
 1. The project connects idea gurus and developers <br>
@@ -10,4 +10,4 @@ IDEA:<br>
 6. All ideas & projects belong 100% to the creators and no one, other than the creators themselves may take credit for their work.<br>
 7. Keep the projects open source so they can be continually improved by others as well!<br>
 
-** Most of the project is undone, so feel free to work on the project however you want! As long as your PR doesn't crash the page, it'll most likely be accepted! :)
+** Most of the project is undone, so feel free to work on the project however you want! As long as your PR doesn't crash the page, it'll most likely be accepted! :) Just wanted to share this idea before Hacktoberfest ends! 
