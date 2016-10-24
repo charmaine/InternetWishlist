@@ -10,4 +10,6 @@ IDEA:<br>
 6. All ideas & projects belong 100% to the creators and no one, other than the creators themselves may take credit for their work.<br>
 7. Keep the projects open source so they can be continually improved by others as well!<br>
 
-** Most of the project is undone, so feel free to work on the project however you want! As long as your PR doesn't crash the page, it'll most likely be accepted! :) Just wanted to share this idea before Hacktoberfest ends! 
+<b>** Most of the project is undone, so feel free to work on the project however you want! As long as your PR doesn't crash the page, it'll most likely be accepted! :) Just wanted to share this idea before Hacktoberfest ends! <br> </b>
+
+<b><i>***Make sure to add your name to CONTRIBUTORS after making a PR </i> </b>
