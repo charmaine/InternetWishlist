@@ -1,4 +1,5 @@
 A website made in hopes to recreate the no longer available Internet Wishlist. 
+Website temporarily available can be accessed through: https://charmainelee.github.io/InternetWishlist/
 
 IDEA:<br>
 1. The project connects idea gurus and developers <br>
