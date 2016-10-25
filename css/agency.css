@@ -216,9 +216,14 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background: #3E3E3E;
-  background-image: radial-gradient(at 50% -16%, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.5) 190%);
-  background-blend-mode: normal,multiply;
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  background-size: cover;
+  -o-background-size: cover;
   text-align: center;
   color: white;
 }
