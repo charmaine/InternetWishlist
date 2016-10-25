@@ -535,6 +535,7 @@ section h3.section-subheading {
   }
 }
 .team-member {
+/*   margin-left: 33.2%; */
   text-align: center;
   margin-bottom: 50px;
 }
@@ -546,6 +547,7 @@ section h3.section-subheading {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
+  text-align: center;
 }
 .team-member p {
   margin-top: 0;
