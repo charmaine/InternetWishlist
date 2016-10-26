@@ -57,8 +57,13 @@ h6 {
 }
 .btn-primary {
   color: white;
+<<<<<<< HEAD
   background-color: #4CAF50;
   border-color: #4CAF50;
+=======
+  background-color: #fed136;
+  border-color: #fed136;
+>>>>>>> master
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -101,8 +106,13 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: white;
+<<<<<<< HEAD
   background-color: #4CAF50;
   border-color: #4CAF50;
+=======
+  background-color: #fed136;
+  border-color: #fed136;
+>>>>>>> master
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -164,8 +174,13 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
+<<<<<<< HEAD
   background-color: #4CAF50;
   border-color: #4CAF50;
+=======
+  background-color: #fed136;
+  border-color: #fed136;
+>>>>>>> master
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -538,6 +553,7 @@ section h3.section-subheading {
   }
 }
 .team-member {
+/*   margin-left: 33.2%; */
   text-align: center;
   margin-bottom: 50px;
 }
@@ -549,6 +565,7 @@ section h3.section-subheading {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
+  text-align: center;
 }
 .team-member p {
   margin-top: 0;
