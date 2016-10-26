@@ -57,13 +57,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-<<<<<<< HEAD
   background-color: #4CAF50;
   border-color: #4CAF50;
-=======
-  background-color: #fed136;
-  border-color: #fed136;
->>>>>>> master
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -106,13 +101,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: white;
-<<<<<<< HEAD
   background-color: #4CAF50;
   border-color: #4CAF50;
-=======
-  background-color: #fed136;
-  border-color: #fed136;
->>>>>>> master
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -174,13 +164,8 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-<<<<<<< HEAD
   background-color: #4CAF50;
   border-color: #4CAF50;
-=======
-  background-color: #fed136;
-  border-color: #fed136;
->>>>>>> master
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
