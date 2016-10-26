@@ -1,4 +1,4 @@
-The people behind the Internet Wishlist
+The people behind the Internet Wishlist. Check them out! :) They're all super cool, I promise.
 
 * [Bulgantamir] (https://github.com/Qlio)
 * [Charmaine Lee](https://github.com/CharmaineLee)
