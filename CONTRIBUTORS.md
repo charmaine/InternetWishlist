@@ -8,5 +8,6 @@ The people behind the Internet Wishlist. Check them out! :) They're all super co
 * [Joshua Barker] (https://github.com/joshuafbarker)
 * [Maitreya Vyas](https://github.com/maitreyav)
 * [Mansi Khemka] (https://github.com/mansikhemka)
+* [Antonio David] (https://github.com/agdavid)
 
 

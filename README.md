@@ -17,5 +17,15 @@ Website can be temporarily be accessed [here](https://charmainelee.github.io/Int
 
 * __***Make sure to add your name to CONTRIBUTORS after making a PR***__
 
+### Contributing
+
+Bug reports and pull requests are welcome on GitHub. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
+
+1. Fork it (https://github.com/CharmaineLee/InternetWishlist)
+2. Create your feature branch (<tt>git checkout -b my-new-feature</tt>)
+3. Commit your changes (<tt>git commit -am 'Add some feature'</tt>)
+4. Push to the branch (<tt>git push origin my-new-feature</tt>)
+5. Create a new Pull Request
+
 ### License
 [MIT](https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
