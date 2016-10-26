@@ -25,7 +25,8 @@
     <script src="vendor/flip_plugin/flip.js"></script>
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
-
+    <link href="css/drawingboard.css" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -182,7 +183,39 @@
             </div>
         </div>
     </section>
-
+<section class="drawing-board">
+      <h1>Draw Your Dreams Into Reality</h1>
+      <canvas width="600" height="400"></canvas>
+      <div class="controls">
+        <ul class=db-ul>
+          <li class="red selected"></li>
+          <li class="blue"></li>
+          <li class="yellow"></li>
+        </ul>
+        <button id="revealColorSelect">New Color</button>
+        <div id="colorSelect">
+          <span id="newColor"></span>
+          <div class="sliders">
+            <p>
+              <label for="red">Red</label>
+              <input id="red" name="red" type="range" min=0 max=255 value=0>
+            </p>
+            <p>
+              <label for="green">Green</label>
+              <input id="green" name="green" type="range" min=0 max=255 value=0>
+            </p>
+            <p>
+              <label for="blue">Blue</label>
+              <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+            </p>
+          </div>
+          <div>
+            <button id="addNewColor">Add Color</button>
+          </div>
+        </div>
+      </div>
+     </section>
+ 
     <!-- Submit -->
     <section id="submit">
         <div class="container">
@@ -537,6 +570,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
 
     
 
