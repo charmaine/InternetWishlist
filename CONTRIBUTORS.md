@@ -1,5 +1,6 @@
 The people behind the Internet Wishlist. Check them out! :) They're all super cool, I promise.
 
+* [Antonio David] (https://github.com/agdavid)
 * [Bulgantamir] (https://github.com/Qlio)
 * [Charmaine Lee](https://github.com/CharmaineLee)
 * [Jacob Herrington] (https://github.com/jacob-on-github)
@@ -8,6 +9,5 @@ The people behind the Internet Wishlist. Check them out! :) They're all super co
 * [Joshua Barker] (https://github.com/joshuafbarker)
 * [Maitreya Vyas](https://github.com/maitreyav)
 * [Mansi Khemka] (https://github.com/mansikhemka)
-* [Antonio David] (https://github.com/agdavid)
-
+* [Mohit Bhatia] (https://github.com/mohitbhatia1994)
 
