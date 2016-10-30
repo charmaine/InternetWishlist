@@ -1,7 +1,7 @@
 <h1><a href="https://charmainelee.github.io/InternetWishlist/" target="_blank"><img width="225" src="logo.png"></a></h1>
 
 A website made in hopes to recreate the no longer available Internet Wishlist.
-Website can be temporarily be accessed [here](https://charmainelee.github.io/InternetWishlist/).
+Website can be temporarily accessed [here](https://charmainelee.github.io/InternetWishlist/).
 
 ### Idea
 1. The project connects idea gurus and developers
