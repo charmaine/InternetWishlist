@@ -63,12 +63,10 @@ canvas {
 }
 
 button {
-  background: #68B25B;
-  box-shadow: 0 3px 0 0 #6A845F;
+  background: #4CAF50;
   color: #fff;
   outline: none;
   cursor: pointer;
-  text-shadow: 0 1px #6A845F;
   display: block;
   font-size: 16px;
   line-height: 40px;
@@ -119,7 +117,7 @@ button {
     top: 0;
     bottom: 0;
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1),rgba(0,0,0,0.05),transparent,transparent)
-      
+
 #newColor {
   width: 80px;
   height: 80px;
@@ -150,8 +148,6 @@ button {
 
 #colorSelect button {
   border: none;
-  border-top: 1px solid #6A845F;
-  border-radius: 0 0 5px 5px;
   clear: both;
   margin: 10px -10px -7px;
   padding: 5px 10px;
