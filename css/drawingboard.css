@@ -72,6 +72,17 @@ button {
   line-height: 40px;
 }
 
+button#addNewColor {
+  margin-top: 20px;
+    width: 100%;
+    border: 0;
+    border-bottom: 5px solid #118416;
+}
+button#addNewColor:active {
+  transform: translateY(5px);
+  border-bottom: 0;
+}
+
 #revealColorSelect {
   border: none;
   border-radius: 5px;
