@@ -6,9 +6,10 @@ $( document ).ready(function() {
   var mouseDown = false;
 
   $(".controls").on("click", "li", function() {
-    $(this).siblings().removeClass("selected");
-    $(this).addClass("selected");
-    color = $(this).css("background-color");
+    var $this = $(this);
+    $this.siblings().removeClass("selected");
+    $this.addClass("selected");
+    color = $this.css("background-color");
   });
 
   $("#revealColorSelect").click(function() {
