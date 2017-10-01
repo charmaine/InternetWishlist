@@ -1,7 +1,19 @@
 // Agency Theme JavaScript
 
 (function($) {
+
     "use strict"; // Start of use strict
+
+    // Array of sections
+    var sections = ['.portfolio-item', 'canvas', '.img-circle'];
+
+    // Set reset to true for ScrollReveal
+    window.sr = ScrollReveal({ reset: true });
+
+    // Loop over array of sections
+    $.each(sections, function(i, val) {
+      sr.reveal(val, { duration: 1000, origin: 'left', scale: 1 });
+    });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -19,7 +31,7 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-collapse ul li a').click(function(){
             $('.navbar-toggle:visible').click();
     });
 
