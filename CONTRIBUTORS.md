@@ -1,4 +1,4 @@
-The people behind the Internet Wishlist. Check them out! :) They're all super cool, I promise.
+The people behind the Internet Wishlist. Check them out! They're all super cool, I promise. :tada:
 
 * [Antonio David](https://github.com/agdavid)
 * [Bulgantamir](https://github.com/Qlio)
