@@ -1,112 +1,113 @@
 .drawing-board {
-  text-align: center;
+    text-align: center;
 }
 
 canvas {
-  background: #fff;
-  display: block;
-  margin: auto;
-  border-radius: 5px;
-  border: 5px solid black;
-  cursor: url(../img/cursor.png), crosshair;
+    background: #fff;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 5px solid black;
+    cursor: url(../img/cursor.png), crosshair;
+    width: 50%;
 }
 
 .controls {
-  min-height: 60px;
-  margin: 0 auto;
-  width: 600px;
-  border-radius: 5px;
-  overflow: hidden;
+    min-height: 60px;
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .db-ul {
-  list-style: none;
-  margin: 0;
-  float: left;
-  padding: 10px 0 20px;
-  width: 100%;
-  text-align: center;
+    list-style: none;
+    margin: 0;
+    float: left;
+    padding: 10px 0 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .db-ul li,
 #newColor {
-  display: block;
-  height: 54px;
-  width: 54px;
-  border-radius: 60px;
-  cursor: pointer;
-  border: 0;
-  box-shadow: 0 3px 0 0 #222;
+    display: block;
+    height: 54px;
+    width: 54px;
+    border-radius: 60px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0 3px 0 0 #222;
 }
 
 .db-ul li {
-  display: inline-block;
-  margin: 0 5px 10px;
+    display: inline-block;
+    margin: 0 5px 10px;
 }
 
 .red {
-  background: #fc4c4f;
+    background: #fc4c4f;
 }
 
 .blue {
-  background: #4fa3fc;
+    background: #4fa3fc;
 }
 
 .yellow {
-  background: #ECD13F;
+    background: #ECD13F;
 }
 
 .selected {
-  border: 7px solid #fff;
-  width: 40px;
-  height: 40px;
+    border: 7px solid #fff;
+    width: 40px;
+    height: 40px;
 }
 
 button {
-  background: #4CAF50;
-  color: #fff;
-  outline: none;
-  cursor: pointer;
-  display: block;
-  font-size: 16px;
-  line-height: 40px;
+    background: #4CAF50;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
 }
 
 #revealColorSelect {
-  border: none;
-  border-radius: 5px;
-  margin: 10px auto;
-  padding: 5px 20px;
-  width: 160px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    width: 160px;
 }
 
 
 /* New Color Palette */
 
 #colorSelect {
-  background: #fff;
-  border-radius: 5px;
-  clear: both;
-  margin: 20px auto 0;
-  padding: 10px;
-  width: 305px;
-  position: relative;
-  display: none;
+    background: #fff;
+    border-radius: 5px;
+    clear: both;
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 305px;
+    position: relative;
+    display: none;
 }
 
 #colorSelect:after {
-  bottom: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  border-width: 10px;
-  margin-left: -10px;
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
 }
 
 #linear_gradient {
@@ -116,40 +117,38 @@ button {
     height: 100px;
     top: 0;
     bottom: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1),rgba(0,0,0,0.05),transparent,transparent)
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05), transparent, transparent) #newColor {
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+        box-shadow: none;
+        float: left;
+        border: none;
+        margin: 10px 20px 20px 10px;
+    }
 
-#newColor {
-  width: 80px;
-  height: 80px;
-  border-radius: 3px;
-  box-shadow: none;
-  float: left;
-  border: none;
-  margin: 10px 20px 20px 10px;
-}
+    .sliders p {
+        margin: 8px 0;
+        vertical-align: middle;
+    }
 
-.sliders p {
-  margin: 8px 0;
-  vertical-align: middle;
-}
+    .sliders label {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        width: 35px;
+        font-size: 14px;
+        color: #6D574E;
+    }
 
-.sliders label {
-  display: inline-block;
-  margin: 0 10px 0 0;
-  width: 35px;
-  font-size: 14px;
-  color: #6D574E;
-}
+    .sliders input {
+        position: relative;
+        top: 2px;
+    }
 
-.sliders input {
-  position: relative;
-  top: 2px;
-}
-
-#colorSelect button {
-  border: none;
-  clear: both;
-  margin: 10px -10px -7px;
-  padding: 5px 10px;
-  width: 325px;
-}
+    #colorSelect button {
+        border: none;
+        clear: both;
+        margin: 10px -10px -7px;
+        padding: 5px 10px;
+        width: 325px;
+    }
