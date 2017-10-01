@@ -1,7 +1,7 @@
 <h1><a href="https://charmainelee.github.io/InternetWishlist/" target="_blank"><img width="225" src="logo.png"></a></h1>
 
 A website made in hopes to recreate the no longer available Internet Wishlist.
-Website can be temporarily accessed [here](https://charmainelee.github.io/InternetWishlist/).
+Website can be temporarily accessed [here](https://charmaine.github.io/InternetWishlist/).
 
 ### Idea
 1. The project connects idea gurus and developers
@@ -15,7 +15,7 @@ Website can be temporarily accessed [here](https://charmainelee.github.io/Intern
 ### Notes
 * ***Most of the project is undone, so feel free to work on the project however you want! As long as your PR doesn't crash the page, it'll most likely be accepted! :) Just wanted to share this idea before Hacktoberfest ends!***
 
-* __***Make sure to add your name to CONTRIBUTORS after making a PR***__
+* __***Make sure to add your name to CONTRIBUTORS before making a PR***__
 
 ### Contributing
 
