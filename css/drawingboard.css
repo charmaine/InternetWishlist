@@ -33,10 +33,10 @@ canvas {
   display: block;
   height: 54px;
   width: 54px;
-  border-radius: 60px;
+  border-radius: 5px;
   cursor: pointer;
   border: 0;
-  box-shadow: 0 3px 0 0 #222;
+
 }
 
 .db-ul li {
@@ -73,24 +73,32 @@ button {
 }
 
 button#addNewColor {
-  margin-top: 20px;
+    margin-top: 20px;
     width: 100%;
     border: 0;
-    border-bottom: 5px solid #118416;
+    border-radius: 5px;
+    box-shadow: 0 5px #118416;
 }
+
 button#addNewColor:active {
   transform: translateY(5px);
   border-bottom: 0;
+  box-shadow: 0 0;
 }
 
 #revealColorSelect {
   border: none;
   border-radius: 5px;
   margin: 10px auto;
-  padding: 5px 20px;
+  padding: 3px 20px;
   width: 160px;
+  border: 2px solid #4CAF50;
+  transition: all .3s ease-in;
 }
-
+#revealColorSelect:hover {
+  background: #fff;
+  color: #4CAF50;
+}
 
 /* New Color Palette */
 
