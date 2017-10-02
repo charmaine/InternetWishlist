@@ -13,5 +13,6 @@ The people behind the Internet Wishlist. Check them out! :) They're all super co
 * [Sachin Kulshrestha] (https://github.com/suresach)
 * [Stefan Kudev] (https://github.com/eskape-media)
 * [Ernest Offiong] (https://github.com/ernoff)
+* [Arushit Mudgal] (https://github.com/kira0204)
 
 
