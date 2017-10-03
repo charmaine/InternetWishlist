@@ -535,8 +535,8 @@ aside.clients {
 // Contact Section
 
 section#contact {
-    background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
+    background-color: #B8F5F2;
+    background-image: url('../img/contact-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -556,6 +556,7 @@ section#contact {
         }
         textarea.form-control {
             height: 236px;
+            resize:none;
         }
     }
     .form-control:focus {
@@ -713,6 +714,53 @@ ul.social-buttons {
     .modal-backdrop {
         opacity: 0;
         display: none;
+    }
+}
+
+#display_ideas,
+.back>h4 {
+    text-align: center
+}
+
+.back,
+.front {
+    border: .4em solid #FFF
+}
+
+#display_ideas {
+    margin: 0 auto;
+    width: 70vw
+}
+
+.back>h4,
+.front>h4 {
+    font-family: Roboto, sans-serif;
+    margin: 1em;
+    color: #fff
+}
+
+.front>h4 {
+    font-weight: bolder
+}
+
+.back {
+    background: rgba(0, 0, 0, .71)
+}
+
+.flip_card {
+    padding-bottom: 16.7em
+}
+
+@media (max-width:768px) {
+    body>div>div>div>.front>h4 {
+        font-weight: bolder;
+        margin: 1em;
+        color: #fff
+    }
+    body>div>div>div>.back>h4 {
+        margin: .5em;
+        color: #fff;
+        text-align: center
     }
 }
 
