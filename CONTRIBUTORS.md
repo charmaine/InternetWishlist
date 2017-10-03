@@ -8,11 +8,14 @@ The people behind the Internet Wishlist. Check them out! :) They're all super co
 * [Jonny Hall] (https://github.com/thejonnyhall)
 * [Joshua Barker](https://github.com/joshuafbarker)
 * [Maitreya Vyas](https://github.com/maitreyav)
-* [Mansi Khemka](https://github.com/mansikhemka)
-* [Mohit Bhatia](https://github.com/mohitbhatia1994)
-* [Sachin Kulshrestha](https://github.com/suresach)
-* [Stefan Kudev](https://github.com/eskape-media)
+* [Mansi Khemka] (https://github.com/mansikhemka)
+* [Mohit Bhatia] (https://github.com/mohitbhatia1994)
+* [Sachin Kulshrestha] (https://github.com/suresach)
+* [Stefan Kudev] (https://github.com/eskape-media)
+* [Ernest Offiong] (https://github.com/ernoff)
+* [Arushit Mudgal] (https://github.com/kira0204)
 * [Elliot Massen](https://github.com/elliotmassen)
 * [Ernest Offiong](https://github.com/ernoff)
+
 
 
