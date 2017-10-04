@@ -3,13 +3,13 @@
 }
 
 canvas {
-  height: 400px;
+  width: 80%;
   background: #fff;
   display: block;
   margin: auto;
   border-radius: 5px;
   border: 5px solid black;
-  cursor: url(../img/cursor.png), crosshair;
+  cursor: crosshair;
 }
 
 .controls {
