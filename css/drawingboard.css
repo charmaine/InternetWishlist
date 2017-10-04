@@ -3,6 +3,7 @@
 }
 
 canvas {
+  height: 400px;
   background: #fff;
   display: block;
   margin: auto;
@@ -14,7 +15,7 @@ canvas {
 .controls {
   min-height: 60px;
   margin: 0 auto;
-  width: 600px;
+  /*width: 600px; Makes the controls unresponsive */
   border-radius: 5px;
   overflow: hidden;
 }
