@@ -2,7 +2,6 @@
 @import "mixins.scss";
 
 // Global Components
-
 body {
     overflow-x: hidden;
     @include body-font;
@@ -44,7 +43,12 @@ a.active {
     color: darken($theme-primary, 10%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     @include heading-font;
     font-weight: 700;
 }
@@ -62,7 +66,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Restyled Primary Buttons
-
 .btn-primary {
     @include button-variant(white, $theme-primary, $theme-primary);
     @include heading-font;
@@ -79,12 +82,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Custom Navigation Bar
-
 .navbar-custom {
     background-color: $gray-darker;
     border-color: transparent;
     .navbar-brand {
         color: $theme-primary;
+        .yellow-logo {
+            height: 120px;
+            width: auto;
+            padding-bottom: 12px;
+        }
+
         @include script-font;
         &:hover,
         &:focus,
@@ -97,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
         border-color: fade-out(white, .02);
     }
     .navbar-toggle {
+        padding: 0px 10px;
         background-color: $theme-primary;
         border-color: $theme-primary;
         @include heading-font;
@@ -155,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Navbar Change on Scroll
-
 @media(min-width:768px) {
     .navbar-custom.affix {
         background-color: $gray-darker;
@@ -218,7 +226,6 @@ header {
 }
 
 // Global Section Styles
-
 section {
     padding: 100px 0;
     h2.section-heading {
@@ -243,14 +250,12 @@ section {
 }
 
 // Services Section
-
 .service-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
 // Portfolio Section
-
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
@@ -288,8 +293,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -323,7 +328,6 @@ section {
 }
 
 // Timeline
-
 .timeline {
     list-style: none;
     padding: 0;
@@ -338,7 +342,7 @@ section {
         left: 40px;
         margin-left: -1.5px;
     }
-    > li {
+    >li {
         margin-bottom: 50px;
         position: relative;
         min-height: 50px;
@@ -387,7 +391,7 @@ section {
                 line-height: 14px;
             }
         }
-        &.timeline-inverted > .timeline-panel {
+        &.timeline-inverted>.timeline-panel {
             float: right;
             text-align: left;
             padding: 0 20px 0 100px;
@@ -418,8 +422,8 @@ section {
         }
     }
     .timeline-body {
-        > p,
-        > ul {
+        >p,
+        >ul {
             margin-bottom: 0;
         }
     }
@@ -430,7 +434,7 @@ section {
         &:before {
             left: 50%;
         }
-        > li {
+        >li {
             margin-bottom: 100px;
             min-height: 100px;
             .timeline-panel {
@@ -450,7 +454,7 @@ section {
                     line-height: 18px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 float: right;
                 text-align: left;
                 padding: 0 30px 20px 20px;
@@ -461,7 +465,7 @@ section {
 
 @media(min-width:992px) {
     .timeline {
-        > li {
+        >li {
             min-height: 150px;
             .timeline-panel {
                 padding: 0 20px 20px;
@@ -476,7 +480,7 @@ section {
                     line-height: 26px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 padding: 0 20px 20px;
             }
         }
@@ -485,7 +489,7 @@ section {
 
 @media(min-width:1200px) {
     .timeline {
-        > li {
+        >li {
             min-height: 170px;
             .timeline-panel {
                 padding: 0 20px 20px 100px;
@@ -498,7 +502,7 @@ section {
                     margin-top: 40px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 padding: 0 100px 20px 20px;
             }
         }
@@ -506,7 +510,6 @@ section {
 }
 
 // Team Section
-
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -525,7 +528,6 @@ section {
 }
 
 // Clients Aside
-
 aside.clients {
     img {
         margin: 50px auto;
@@ -533,7 +535,6 @@ aside.clients {
 }
 
 // Contact Section
-
 section#contact {
     background-color: $gray-darker;
     background-image: url('../img/map-image.png');
@@ -562,25 +563,27 @@ section#contact {
         border-color: $theme-primary;
         box-shadow: none;
     }
-    ::-webkit-input-placeholder {
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
+     ::-webkit-input-placeholder {
+        @include heading-font;
+        font-weight: 700;
+        color: $gray-lighter;
     }
-    :-moz-placeholder { /* Firefox 18- */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
+     :-moz-placeholder {
+        /* Firefox 18- */
+        @include heading-font;
+        font-weight: 700;
+        color: $gray-lighter;
     }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        @include heading-font;
+        font-weight: 700;
+        color: $gray-lighter;
     }
-    :-ms-input-placeholder {  
-       @include heading-font;
-       font-weight: 700;
-       color: $gray-lighter;
+     :-ms-input-placeholder {
+        @include heading-font;
+        font-weight: 700;
+        color: $gray-lighter;
     }
     .text-danger {
         color: $theme-danger;
@@ -588,7 +591,6 @@ section#contact {
 }
 
 // Footer
-
 footer {
     padding: 25px 0;
     text-align: center;
@@ -606,7 +608,6 @@ footer {
 }
 
 // Social Buttons
-
 ul.social-buttons {
     margin-bottom: 0;
     li {
@@ -640,7 +641,7 @@ ul.social-buttons {
 }
 
 .portfolio-modal {
-    .modal-dialog{
+    .modal-dialog {
         margin: 0;
         height: 100%;
         width: auto;
@@ -677,9 +678,9 @@ ul.social-buttons {
     }
     .close-modal {
         position: absolute;
-        width:75px;
-        height:75px;
-        background-color:transparent;
+        width: 75px;
+        height: 75px;
+        background-color: transparent;
         top: 25px;
         right: 25px;
         cursor: pointer;
@@ -687,37 +688,48 @@ ul.social-buttons {
             opacity: 0.3;
         }
         .lr {
-            height:75px;
-            width:1px;
-            margin-left:35px;
-            background-color:$gray-darker;
+            height: 75px;
+            width: 1px;
+            margin-left: 35px;
+            background-color: $gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
             -webkit-transform: rotate(45deg);
             /* Safari and Chrome */
-            z-index:1051;
+            z-index: 1051;
             .rl {
-                height:75px;
-                width:1px;
-                background-color:$gray-darker;
+                height: 75px;
+                width: 1px;
+                background-color: $gray-darker;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
-                z-index:1052;
-            }            
-        }        
+                z-index: 1052;
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
         display: none;
     }
+    .navbar-header {
+        .navbar-brand {
+            padding: 0;
+            .yellow-logo {
+                height: 100%;
+                width: auto;
+                top: 10%;
+                transform: translateY(10%);
+                padding-bottom: 0;
+            }
+        }
+    }
 }
 
 // Highlight Color Customization
-
 ::-moz-selection {
     text-shadow: none;
     background: $theme-primary;

@@ -3,11 +3,6 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
- *{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
- }
 body {
   overflow-x: hidden;
   font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -159,6 +154,11 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-custom .navbar-brand .yellow-logo {
+  height: 120px;
+  width: auto;
+  padding-bottom: 12px;
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -169,6 +169,7 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
+  padding: 0px 10px;
   background-color: #fed136;
   border-color: #fed136;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -774,6 +775,16 @@ ul.social-buttons li a:active {
     color: #fff;
     text-align: center;
   }
+  .navbar-header .navbar-brand {
+    padding: 0;
+  }
+  .navbar-header .navbar-brand .yellow-logo {
+    height: 100%;
+    width: auto;
+    top: 10%;
+    transform: translateY(10%);
+    padding-bottom: 0;
+  }
 }
 ::-moz-selection {
   text-shadow: none;
@@ -792,26 +803,3 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-
-/* Scroll to top of page */
-
-.scrollToTop{
-    width:60px; 
-    height:60px;
-    padding:15px; 
-    text-align:center; 
-    font-weight: bold;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
-    position:fixed;
-    bottom: 80px;
-    right:40px;
-    display:none;
-    background: rgba(18,52,86, 0.5);
-    z-index: 2;
-}
-.scrollToTop:hover{
-    text-decoration:none;
-    background: rgba(18,52,86, 0.8);
-  }
