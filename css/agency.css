@@ -167,6 +167,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
+  margin-right: 2.875rem;
 }
 .navbar-custom .navbar-toggle {
   padding: 0px 10px;
