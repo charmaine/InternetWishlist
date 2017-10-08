@@ -804,3 +804,29 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+/* Scroll to top of page */
+.scrollToTop {
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 0.9375rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.625rem;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 2.5rem;
+  display: none;
+  background: rgba(18, 52, 86, 0.5);
+  z-index: 2;
+}
+.scrollToTop i {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+.scrollToTop:hover {
+  text-decoration: none;
+  background: rgba(18, 52, 86, 0.8);
+}

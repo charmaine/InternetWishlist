@@ -2,7 +2,6 @@
 @import "mixins.less";
 
 // Global Components
-
 body {
     overflow-x: hidden;
     .body-font;
@@ -44,7 +43,12 @@ a.active {
     color: darken(@theme-primary, 10%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     .heading-font;
     font-weight: 700;
 }
@@ -62,15 +66,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Restyled Primary Buttons
-
 .btn-primary {
-    .button-variant(white; @theme-primary; @theme-primary);
+    .button-variant(white;
+    @theme-primary;
+    @theme-primary);
     .heading-font;
     font-weight: 700;
 }
 
 .btn-xl {
-    .button-variant(white; @theme-primary; @theme-primary);
+    .button-variant(white;
+    @theme-primary;
+    @theme-primary);
     .heading-font;
     font-weight: 700;
     border-radius: 3px;
@@ -79,7 +86,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Custom Navigation Bar
-
 .navbar-custom {
     background-color: @gray-darker;
     border-color: transparent;
@@ -162,7 +168,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Navbar Change on Scroll
-
 @media(min-width:768px) {
     .navbar-custom.affix {
         background-color: @gray-darker;
@@ -225,7 +230,6 @@ header {
 }
 
 // Global Section Styles
-
 section {
     padding: 100px 0;
     h2.section-heading {
@@ -250,14 +254,12 @@ section {
 }
 
 // Services Section
-
 .service-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
 // Portfolio Section
-
 #portfolio {
     .portfolio-item {
         margin: 0 0 15px;
@@ -295,8 +297,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -330,7 +332,6 @@ section {
 }
 
 // Timeline
-
 .timeline {
     list-style: none;
     padding: 0;
@@ -345,7 +346,7 @@ section {
         left: 40px;
         margin-left: -1.5px;
     }
-    > li {
+    >li {
         margin-bottom: 50px;
         position: relative;
         min-height: 50px;
@@ -394,7 +395,7 @@ section {
                 line-height: 14px;
             }
         }
-        &.timeline-inverted > .timeline-panel {
+        &.timeline-inverted>.timeline-panel {
             float: right;
             text-align: left;
             padding: 0 20px 0 100px;
@@ -425,8 +426,8 @@ section {
         }
     }
     .timeline-body {
-        > p,
-        > ul {
+        >p,
+        >ul {
             margin-bottom: 0;
         }
     }
@@ -437,7 +438,7 @@ section {
         &:before {
             left: 50%;
         }
-        > li {
+        >li {
             margin-bottom: 100px;
             min-height: 100px;
             .timeline-panel {
@@ -457,7 +458,7 @@ section {
                     line-height: 18px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 float: right;
                 text-align: left;
                 padding: 0 30px 20px 20px;
@@ -468,7 +469,7 @@ section {
 
 @media(min-width:992px) {
     .timeline {
-        > li {
+        >li {
             min-height: 150px;
             .timeline-panel {
                 padding: 0 20px 20px;
@@ -483,7 +484,7 @@ section {
                     line-height: 26px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 padding: 0 20px 20px;
             }
         }
@@ -492,7 +493,7 @@ section {
 
 @media(min-width:1200px) {
     .timeline {
-        > li {
+        >li {
             min-height: 170px;
             .timeline-panel {
                 padding: 0 20px 20px 100px;
@@ -505,7 +506,7 @@ section {
                     margin-top: 40px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 padding: 0 100px 20px 20px;
             }
         }
@@ -513,7 +514,6 @@ section {
 }
 
 // Team Section
-
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -532,7 +532,6 @@ section {
 }
 
 // Clients Aside
-
 aside.clients {
     img {
         margin: 50px auto;
@@ -540,7 +539,6 @@ aside.clients {
 }
 
 // Contact Section
-
 section#contact {
     background-color: #B8F5F2;
     background-image: url('../img/contact-bg.png');
@@ -563,7 +561,7 @@ section#contact {
         }
         textarea.form-control {
             height: 236px;
-            resize:none;
+            resize: none;
         }
     }
     .form-control:focus {
@@ -598,7 +596,6 @@ section#contact {
 }
 
 // Footer
-
 footer {
     padding: 25px 0;
     text-align: center;
@@ -616,7 +613,6 @@ footer {
 }
 
 // Social Buttons
-
 ul.social-buttons {
     margin-bottom: 0;
     li {
@@ -786,7 +782,6 @@ ul.social-buttons {
 }
 
 // Highlight Color Customization
-
 ::-moz-selection {
     text-shadow: none;
     background: @theme-primary;
@@ -807,4 +802,34 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+
+/* Scroll to top of page */
+
+.scrollToTop {
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0.9375rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.625rem;
+    color: #fff;
+    text-decoration: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 2.5rem;
+    display: none;
+    background: rgba(18, 52, 86, 0.5);
+    z-index: 2;
+    i {
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+}
+
+.scrollToTop:hover {
+    text-decoration: none;
+    background: rgba(18, 52, 86, 0.8);
 }
