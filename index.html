@@ -47,9 +47,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="padding: 0px 10px;">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <div id="content"></div>
+                <div id="content">
                 <a class="navbar-brand page-scroll" href="#page-top"><img class="yellow-logo" style="height: 120px;width: auto; padding-bottom: 12px;
-                " src="yellow.png" ></a>
+                " src="yellow.png" alt="Internet Wishlist yellow logo"></a>
             	</div>
             </div>
 
@@ -89,9 +89,7 @@
     </header>
     <!-- About -->
     <div class="container">
-        <center>
-            <h3 class="section-heading">The Internet Wishlist Helps Make Your Ideas Happen</h3>
-        </center>
+        <h3 class="section-heading text-center">The Internet Wishlist Helps Make Your Ideas Happen</h3>
     </div>
 
     <!-- Successful Projects -->
@@ -193,7 +191,7 @@
     </section>
     <section class="drawing-board">
         <h1>Draw Your Dreams Into Reality</h1>
-        <canvas width="match-parent" height="300"></canvas>
+        <canvas width="300" height="300"></canvas>
         <div class="controls row" style="margin: auto;">
             <ul class=db-ul>
                 <li class="red selected"></li>
@@ -232,7 +230,9 @@
                     <h2 class="section-heading">Submit Your Ideas</h2>
                     <h3 class="section-subheading text-muted">Fill the form below with your ideas and wait for developers to make it happen.</h3>
                     <!-- Added the iframe below to embed google forms -->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqoXTPNp0i0nWR7ejoUivUCieNDKfLcMKBffdVNYBoYj-knQ/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLScqoXTPNp0i0nWR7ejoUivUCieNDKfLcMKBffdVNYBoYj-knQ/viewform?embedded=true"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,12 +361,9 @@
                 </div>
             </div>
             <div class="col-sm-4" style="width: 100%">
-                <center>
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="" align="middle">
-                        <center>
-                            <h4 align="middle">Charmaine Lee</h4>
-                        </center>
+                        <img src="img/team/2.jpg" class="img-responsive img-circle center-block" alt="Photo of the founder Charmaine Lee">
+                        <h4 class="text-center">Charmaine Lee</h4>
                         <p class="text-muted">Founder</p>
                         <ul class="list-inline social-buttons">
 
@@ -379,7 +376,6 @@
 
                         </ul>
                     </div>
-                </center>
             </div>
         </div>
         <div class="scroll-top-wrapper">
