@@ -302,7 +302,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
@@ -741,6 +741,7 @@ ul.social-buttons li a:active {
 #display_ideas,
 .back > h4 {
   text-align: center;
+  font-size: 13px;
 }
 .back,
 .front {
@@ -748,7 +749,8 @@ ul.social-buttons li a:active {
 }
 #display_ideas {
   margin: 0 auto;
-  width: 70vw;
+  width: 90%;
+  max-width: 1000px;
 }
 .back > h4,
 .front > h4 {
@@ -764,6 +766,7 @@ ul.social-buttons li a:active {
 }
 .flip_card {
   padding-bottom: 16.7em;
+  padding-left: 0;
 }
 @media (max-width: 768px) {
   body > div > div > div > .front > h4 {
@@ -821,11 +824,13 @@ body {
   background: rgba(18, 52, 86, 0.5);
   z-index: 2;
 }
+
 .scrollToTop i {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
 }
+
 .scrollToTop:hover {
   text-decoration: none;
   background: rgba(18, 52, 86, 0.8);

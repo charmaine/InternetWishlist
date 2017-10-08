@@ -249,7 +249,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 
@@ -585,10 +585,11 @@ section#contact {
         font-weight: 700;
         color: @gray-lighter;
     }
-     :-ms-input-placeholder {
-        .heading-font;
-        font-weight: 700;
-        color: @gray-lighter;
+
+    :-ms-input-placeholder {
+       .heading-font;
+       font-weight: 700;
+       color: @gray-lighter;
     }
     .text-danger {
         color: @theme-danger;
@@ -724,7 +725,8 @@ ul.social-buttons {
 
 #display_ideas,
 .back>h4 {
-    text-align: center
+    text-align: center;
+    font-size: 13px;
 }
 
 .back,
@@ -734,7 +736,8 @@ ul.social-buttons {
 
 #display_ideas {
     margin: 0 auto;
-    width: 70vw
+    width: 90%;
+    max-width: 1000px;
 }
 
 .back>h4,
@@ -753,7 +756,8 @@ ul.social-buttons {
 }
 
 .flip_card {
-    padding-bottom: 16.7em
+    padding-bottom: 16.7em;
+    padding-left: 0;
 }
 
 @media (max-width:768px) {
@@ -803,7 +807,6 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @theme-primary;
 }
-
 
 /* Scroll to top of page */
 
