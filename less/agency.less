@@ -238,7 +238,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 
@@ -288,8 +288,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -578,7 +578,7 @@ section#contact {
        font-weight: 700;
        color: @gray-lighter;
     }
-    :-ms-input-placeholder {  
+    :-ms-input-placeholder {
        .heading-font;
        font-weight: 700;
        color: @gray-lighter;
@@ -708,8 +708,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
@@ -719,7 +719,8 @@ ul.social-buttons {
 
 #display_ideas,
 .back>h4 {
-    text-align: center
+    text-align: center;
+    font-size: 13px;
 }
 
 .back,
@@ -729,7 +730,8 @@ ul.social-buttons {
 
 #display_ideas {
     margin: 0 auto;
-    width: 70vw
+    width: 90%;
+    max-width: 1000px;
 }
 
 .back>h4,
@@ -748,7 +750,8 @@ ul.social-buttons {
 }
 
 .flip_card {
-    padding-bottom: 16.7em
+    padding-bottom: 16.7em;
+    padding-left: 0;
 }
 
 @media (max-width:768px) {
@@ -786,4 +789,27 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+/* Scroll to top of page */
+
+.scrollToTop{
+    width:60px;
+    height:60px;
+    padding:15px;
+    text-align:center;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    position:fixed;
+    bottom: 80px;
+    right:40px;
+    display:none;
+    background: rgba(18,52,86, 0.5);
+    z-index: 2;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+    background: rgba(18,52,86, 0.8);
 }
