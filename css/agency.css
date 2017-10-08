@@ -789,6 +789,9 @@ ul.social-buttons li a:active {
     transform: translateY(10%);
     padding-bottom: 0;
   }
+  .navbar-custom .navbar-collapse {
+    margin-right: 0;
+  }
 }
 ::-moz-selection {
   text-shadow: none;
@@ -824,13 +827,11 @@ body {
   background: rgba(18, 52, 86, 0.5);
   z-index: 2;
 }
-
 .scrollToTop i {
   top: 50%;
   position: relative;
   transform: translateY(-50%);
 }
-
 .scrollToTop:hover {
   text-decoration: none;
   background: rgba(18, 52, 86, 0.8);
