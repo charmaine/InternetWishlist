@@ -8,13 +8,13 @@ canvas {
   margin: auto;
   border-radius: 5px;
   border: 5px solid black;
-  cursor: url(../img/cursor.png), crosshair;
+  cursor: crosshair;
 }
 
 .controls {
   min-height: 60px;
   margin: 0 auto;
-  width: 600px;
+  /*width: 600px; Makes the controls unresponsive */
   border-radius: 5px;
   overflow: hidden;
 }
@@ -33,10 +33,10 @@ canvas {
   display: block;
   height: 54px;
   width: 54px;
-  border-radius: 60px;
+  border-radius: 5px;
   cursor: pointer;
   border: 0;
-  box-shadow: 0 3px 0 0 #222;
+
 }
 
 .db-ul li {
@@ -72,14 +72,33 @@ button {
   line-height: 40px;
 }
 
-#revealColorSelect {
+button#addNewColor {
+    margin-top: 20px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px #118416;
+}
+
+button#addNewColor:active {
+  transform: translateY(5px);
+  border-bottom: 0;
+  box-shadow: 0 0;
+}
+
+#revealColorSelect, #saveImage {
   border: none;
   border-radius: 5px;
   margin: 10px auto;
-  padding: 5px 20px;
+  padding: 3px 20px;
   width: 160px;
+  border: 2px solid #4CAF50;
+  transition: all .3s ease-in;
 }
-
+#revealColorSelect:hover, #saveImage:hover {
+  background: #fff;
+  color: #4CAF50;
+}
 
 /* New Color Palette */
 
