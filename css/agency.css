@@ -836,3 +836,15 @@ body {
   text-decoration: none;
   background: rgba(18, 52, 86, 0.8);
 }
+
+.team-member li{
+  list-style: none;
+}
+.dev-team li{
+  list-style: none;
+  display: inline;
+}
+.dev-team ul{
+  list-style: none;
+  display: inline;
+}
