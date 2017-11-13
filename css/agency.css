@@ -159,6 +159,11 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-custom .navbar-brand .yellow-logo {
+  height: 120px;
+  width: auto;
+  padding-bottom: 12px;
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -167,8 +172,10 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
+  margin-right: 2.875rem;
 }
 .navbar-custom .navbar-toggle {
+  padding: 0px 10px;
   background-color: #fed136;
   border-color: #fed136;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -300,7 +307,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
@@ -739,6 +746,7 @@ ul.social-buttons li a:active {
 #display_ideas,
 .back > h4 {
   text-align: center;
+  font-size: 13px;
 }
 .back,
 .front {
@@ -746,7 +754,8 @@ ul.social-buttons li a:active {
 }
 #display_ideas {
   margin: 0 auto;
-  width: 70vw;
+  width: 90%;
+  max-width: 1000px;
 }
 .back > h4,
 .front > h4 {
@@ -762,6 +771,7 @@ ul.social-buttons li a:active {
 }
 .flip_card {
   padding-bottom: 16.7em;
+  padding-left: 0;
 }
 @media (max-width: 768px) {
   body > div > div > div > .front > h4 {
@@ -773,6 +783,19 @@ ul.social-buttons li a:active {
     margin: .5em;
     color: #fff;
     text-align: center;
+  }
+  .navbar-header .navbar-brand {
+    padding: 0;
+  }
+  .navbar-header .navbar-brand .yellow-logo {
+    height: 100%;
+    width: auto;
+    top: 10%;
+    transform: translateY(10%);
+    padding-bottom: 0;
+  }
+  .navbar-custom .navbar-collapse {
+    margin-right: 0;
   }
 }
 ::-moz-selection {
@@ -792,8 +815,32 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-
 /* Scroll to top of page */
+.scrollToTop {
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 0.9375rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.625rem;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 2.5rem;
+  display: none;
+  background: rgba(18, 52, 86, 0.5);
+  z-index: 2;
+}
+.scrollToTop i {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+.scrollToTop:hover {
+  text-decoration: none;
+  background: rgba(18, 52, 86, 0.8);
+}
 
 .scrollToTop{
     width:60px; 

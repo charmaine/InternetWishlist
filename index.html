@@ -44,12 +44,11 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="padding: 0px 10px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <div id="content"></div>
-                <a class="navbar-brand page-scroll" href="#page-top"><img class="yellow-logo" style="height: 120px;width: auto; padding-bottom: 12px;
-                " src="yellow.png" ></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="yellow-logo" src="yellow.png" ></a>
             	</div>
             </div>
 
@@ -89,10 +88,131 @@
     </header>
     <!-- About -->
     <div class="container">
-        <center>
-            <h3 class="section-heading">The Internet Wishlist Helps Make Your Ideas Happen</h3>
-        </center>
+        <h3 class="section-heading text-center">The Internet Wishlist Helps Make Your Ideas Happen</h3><hr>
     </div>
+
+
+    <section class="drawing-board">
+        <h1>Draw Your Dreams Into Reality</h1>
+        <canvas width="300" height="300"></canvas>
+        <div class="controls row" style="margin: auto;">
+            <ul class=db-ul>
+                <li class="red selected"></li>
+                <li class="blue"></li>
+                <li class="yellow"></li>
+            </ul>
+            <button id="revealColorSelect">New Color</button>
+            <a id="downloadDrawing" href="#" download style="text-decoration:none;">
+                <button id="saveImage">Save drawing</button>
+            </a>
+            <div id="colorSelect">
+                <span id="newColor"></span>
+                <div class="sliders">
+                    <p>
+                        <label for="red">Red</label>
+                        <input id="red" name="red" type="range" min=0 max=255 value=0>
+                    </p>
+                    <p>
+                        <label for="green">Green</label>
+                        <input id="green" name="green" type="range" min=0 max=255 value=0>
+                    </p>
+                    <p>
+                        <label for="blue">Blue</label>
+                        <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                    </p>
+                </div>
+                <div>
+                    <button id="addNewColor">Add Color</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit -->
+    <section id="submit" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Submit Your Ideas</h2>
+                    <h3 class="section-subheading text-muted">Fill the form below with your ideas and wait for developers to make it happen.</h3>
+                    <!-- Added the iframe below to embed google forms -->
+                    <div class="embed-responsive embed-responsive-16by9 height-xs-325vw height-sm-200vw height-md-150vw">
+                        <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLScqoXTPNp0i0nWR7ejoUivUCieNDKfLcMKBffdVNYBoYj-knQ/viewform?embedded=true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- display ideas section-->
+    <section id="display_ideas">
+        <h1> Or check out these to work on </h1>
+        <div class="row">
+            <div class="flip_card col-lg-3 col-xs-6" id="card1">
+                <div class="front" style="background: #2098fa;">
+                    <h4>One stop website</h4>
+                </div>
+                <div class="back">
+                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
+                        Read more
+                    </a></h4>
+                </div>
+            </div>
+            <div class="flip_card col-lg-3 col-xs-6" id="card2">
+                <div class="front" style="background-color: #06924f;">
+                    <h4>My finance management</h4>
+                </div>
+                <div class="back">
+                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
+                        Read more
+                    </a></h4>
+                </div>
+            </div>
+            <div class="flip_card col-lg-6 col-xs-12" id="card3">
+                <div class="front" style="background: #97e45d;">
+                    <h4>Keep parents happy</h4>
+                </div>
+                <div class="back">
+                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
+                        Read more
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="flip_card col-lg-6 col-xs-12" id="card4">
+                <div class="front" style="background: #97e45d;">
+                    <h4>Social app</h4>
+                </div>
+                <div class="back">
+                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
+                        Read more
+                    </a></h4>
+                </div>
+            </div>
+            <div class="flip_card col-lg-3 col-xs-6" id="card5">
+                <div class="front" style="background-color: #06924f;">
+                    <h4>Song scheduler</h4>
+                </div>
+                <div class="back">
+                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
+                        Read more
+                    </a></h4>
+                </div>
+            </div>
+            <div class="flip_card col-lg-3 col-xs-6" id="card6">
+                <div class="front" style="background: #2098fa;">
+                    <h4>Automate my work</h4>
+                </div>
+                <div class="back">
+                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
+                        Read more
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Successful Projects -->
     <section id="portfolio" class="bg-light-gray">
@@ -191,121 +311,6 @@
             </div>
         </div>
     </section>
-    <section class="drawing-board">
-        <h1>Draw Your Dreams Into Reality</h1>
-        <canvas width="match-parent" height="300"></canvas>
-        <div class="controls row" style="margin: auto;">
-            <ul class=db-ul>
-                <li class="red selected"></li>
-                <li class="blue"></li>
-                <li class="yellow"></li>
-            </ul>
-            <button id="revealColorSelect">New Color</button>
-            <div id="colorSelect">
-                <span id="newColor"></span>
-                <div class="sliders">
-                    <p>
-                        <label for="red">Red</label>
-                        <input id="red" name="red" type="range" min=0 max=255 value=0>
-                    </p>
-                    <p>
-                        <label for="green">Green</label>
-                        <input id="green" name="green" type="range" min=0 max=255 value=0>
-                    </p>
-                    <p>
-                        <label for="blue">Blue</label>
-                        <input id="blue" name="blue" type="range" min=0 max=255 value=0>
-                    </p>
-                </div>
-                <div>
-                    <button id="addNewColor">Add Color</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Submit -->
-    <section id="submit" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Submit Your Ideas</h2>
-                    <h3 class="section-subheading text-muted">Fill the form below with your ideas and wait for developers to make it happen.</h3>
-                    <!-- Added the iframe below to embed google forms -->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqoXTPNp0i0nWR7ejoUivUCieNDKfLcMKBffdVNYBoYj-knQ/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- display ideas section-->
-    <section id="display_ideas">
-        <h1> Or check out these to work on </h1>
-        <div class="row">
-            <div class="flip_card col-lg-3 col-xs-6" id="card1">
-                <div class="front" style="background: #2098fa;">
-                    <h4>One stop website</h4>
-                </div>
-                <div class="back">
-                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
-                        Read more
-                    </a></h4>
-                </div>
-            </div>
-            <div class="flip_card col-lg-3 col-xs-6" id="card2">
-                <div class="front" style="background-color: #06924f;">
-                    <h4>My finance management</h4>
-                </div>
-                <div class="back">
-                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
-                        Read more
-                    </a></h4>
-                </div>
-            </div>
-            <div class="flip_card col-lg-6 col-xs-12" id="card3">
-                <div class="front" style="background: #97e45d;">
-                    <h4>Keep parents happy</h4>
-                </div>
-                <div class="back">
-                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
-                        Read more
-                    </a></h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="flip_card col-lg-6 col-xs-12" id="card4">
-                <div class="front" style="background: #97e45d;">
-                    <h4>Social app</h4>
-                </div>
-                <div class="back">
-                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
-                        Read more
-                    </a></h4>
-                </div>
-            </div>
-            <div class="flip_card col-lg-3 col-xs-6" id="card5">
-                <div class="front" style="background-color: #06924f;">
-                    <h4>Song scheduler</h4>
-                </div>
-                <div class="back">
-                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
-                        Read more
-                    </a></h4>
-                </div>
-            </div>
-            <div class="flip_card col-lg-3 col-xs-6" id="card6">
-                <div class="front" style="background: #2098fa;">
-                    <h4>Automate my work</h4>
-                </div>
-                <div class="back">
-                    <h4>Lorem ipsum dolor sit amut, consectetur adipissacing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat <a href="#display_idea_modal" class="display_idea_modal_link" data-toggle="modal">
-                        Read more
-                    </a></h4>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -361,12 +366,9 @@
                 </div>
             </div>
             <div class="col-sm-4" style="width: 100%">
-                <center>
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="" align="middle">
-                        <center>
-                            <h4 align="middle">Charmaine Lee</h4>
-                        </center>
+                        <img src="img/team/2.jpg" class="img-responsive img-circle center-block" alt="Photo of the founder Charmaine Lee">
+                        <h4 class="text-center">Charmaine Lee</h4>
                         <p class="text-muted">Founder</p>
                         <ul class="list-inline social-buttons">
 
@@ -376,12 +378,180 @@
                            </li>
                            <li><a href="https://www.linkedin.com/in/charmaineklee"><i class="fa fa-linkedin"></i></a>
                            </li>
+                           <li>&nbsp;</li>
+                    </ul>
+                          <ul style="list-style: none;"> <li>&nbsp;</li></ul>
+                        <h2 class="section-heading">Developers</h2>
+                        <h3 class="section-subheading text-muted">Our hard working Dev-team :)</h3>
 
-                        </ul>
-                    </div>
-                </center>
-            </div>
-        </div>
+                    <div class="dev-team" >
+                    	<ul style="list-style: none; display: inline ;">
+
+                        <li><img src="img/team/4.jpg" class="img-responsive img-circle " style="width: 200px; height: 200px; "></li>
+                        <h4 class="text-center">Antonio David</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/agdavid"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/5.jpg" class="img-responsive img-circle center-block" style="height: 200px; width: 200px;" ></li>
+                        <h4 class="text-center">Bulgantamir</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/Qlio"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/6.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Jeremy Bunting</h4>
+                        <ul class="list-inline social-buttons">
+
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/qbunt"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/7.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Jonny Hall</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/thejonnyhall"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/8.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Joshua Barker</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/joshuafbarker"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/9.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Maitreya Vyas</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/maitreyav"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/10.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Mansi Khemka</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/mansikhemka"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/11.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Mohit Bhatia</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/mohitbhatia1994"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/12.jpg" class="img-responsive img-circle center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Sachin Kudev</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/charmaine"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/13.jpg" class="img-responsive img-circle center-block"  style="width: 200px; height: 200px;"></li>
+                        <h4 class="text-center">Ernest Offiong</h4>
+                        <ul class="list-inline social-buttons">
+
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/ernoff"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li> 
+                        <li><img src="img/team/14.jpg" class="img-responsive img-circle center-block"  style="width: 200px; height: 200px;"></li>
+                        <h4 class="text-center">Arushit Mudgal</h4>
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/kira0204"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                        <li><img src="img/team/15.jpg" class="img-responsive img-circle center-block"  style="width: 200px; height: 200px;"></li>
+                        <h4 class="text-center">Elliot Massen</h4>
+                        <ul class="list-inline social-buttons">
+
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/elliotmassen"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                        <li>&nbsp;</li>
+                         <li style="display: inline;"><img src="img/team/3.jpg" class="img-circle img-responsive center-block" style="width: 200px; height: 200px;" ></li>
+                        <h4 class="text-center">Sanskar Jethi</h4>
+                        
+                        <ul class="list-inline social-buttons">
+                            <li>&nbsp;</li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a>
+                           </li>
+                           <li><a href="https://github.com/stealthanthrax"><i class="fa fa-github"></i></a>
+                           </li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                           </li>
+                    </ul>
+                    <li>&nbsp;</li>
+                        </ul>	
+                       
+                     </div>
+
+                    </div>    
+                </div>
+
+        
         <div class="scroll-top-wrapper">
             <a href="#" class="scrollToTop"><i class="fa fa-angle-up fa-2x"></i></a>
         </div>
@@ -393,7 +563,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; The Internet Wishlist 2016</span>
+                    <span class="copyright">Copyright &copy; The Internet Wishlist 2017</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
