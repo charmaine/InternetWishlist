@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   var color = $(".selected").css("background-color");
-  var $canvas = $("canvas");
-  var context = $canvas[0].getContext("2d");
+  var canvas = $("canvas");
+  var context = canvas[0].getContext("2d");
   var lastEvent;
   var mouseDown = false;
 
@@ -33,7 +33,7 @@ $( document ).ready(function() {
     $newColor.click();
   });
 
-  $canvas.mousedown(function(e) {
+  canvas.mousedown(function(e) {
     lastEvent = e;
     mouseDown = true;
   }).mousemove(function(e) {
@@ -47,8 +47,10 @@ $( document ).ready(function() {
     }
   }).mouseup(function() {
     mouseDown = false;
+    $('#downloadDrawing').attr("href", $("canvas")[0].toDataURL("image/png"));
   }).mouseleave(function() {
-    $canvas.mouseup();
+    canvas.mouseup();
+    $('#downloadDrawing').attr("href", $("canvas")[0].toDataURL("image/png"));
   });
 
   // Scroll to top of page
@@ -59,7 +61,7 @@ $( document ).ready(function() {
       $('.scrollToTop').fadeOut();
     }
   });
-  
+
   //Click event to scroll to top
   $('.scrollToTop').click(function () {
     $('html, body').animate({scrollTop : 0},800);
