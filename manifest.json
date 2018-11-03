@@ -1,0 +1,19 @@
+{
+  "name": "The Internet Wishlist",
+  "short_name": "Internet Wishlist",
+   "start_url": "index.html",
+  "display": "standalone",
+    "theme_color": "#B8F5F2",
+  "background_color": "#75ece6",
+  "description": "The Internet Wishlist Helps Makes Your Ideas Happen",
+  "icons": [{
+
+          "src": "img/icon/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },{
+          "src": "img/icon/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+    ]}

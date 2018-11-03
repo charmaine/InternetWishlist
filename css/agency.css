@@ -3,6 +3,11 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ *{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+ }
 body {
   overflow-x: hidden;
   font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -837,14 +842,23 @@ body {
   background: rgba(18, 52, 86, 0.8);
 }
 
-.team-member li{
-  list-style: none;
+.scrollToTop{
+    width:60px; 
+    height:60px;
+    padding:15px; 
+    text-align:center; 
+    font-weight: bold;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    position:fixed;
+    bottom: 80px;
+    right:40px;
+    display:none;
+    background: rgba(18,52,86, 0.5);
+    z-index: 2;
 }
-.dev-team li{
-  list-style: none;
-  display: inline;
-}
-.dev-team ul{
-  list-style: none;
-  display: inline;
-}
+.scrollToTop:hover{
+    text-decoration:none;
+    background: rgba(18,52,86, 0.8);
+  }
