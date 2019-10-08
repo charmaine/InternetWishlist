@@ -1,0 +1,19 @@
+
+
+/* ---- Contributors Section ----*/
+
+.dev-team .contributors-card {
+  margin-top: 22px;
+}
+
+.dev-team .contributors-text {
+	margin-top: 7px;
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+.dev-team .contributors-links {
+	margin-top: 5px;
+	font-weight: 700;
+	font-size: 1.2em;
+}
